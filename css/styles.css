@@ -43,17 +43,41 @@ main{
     border-radius: 0.5rem;
 }
 
+.row{
+    display: flex;
+    align-items: center; 
+}
+
 .billPeople, .calculator{
     border-radius: 0.5rem;
+}
+
+.calculator input, .calculator input::placeholder{
+    color: hsl(185, 41%, 84%);
+    font-size: 1.3rem;
+}
+
+.billPeople h1, h2{
+    color: hsl(186, 14%, 43%);
+}
+
+.billPeople div, .calculator .row{
+    margin: 0.5rem 0;
 }
 
 input{
     font-size: 1.2rem;
     font-family: 'Space Mono', monospace;
-    text-align: end;
+    text-align: right;
     background-color: inherit;
     border-style: none;
+    width: 100%;
+}
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 5px;
 }
 
 #total, #tipAmount, #custom{
@@ -61,10 +85,10 @@ input{
     font-size: 1rem;
 }
 
-
-
 h1, h2, h3{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+    width: 100%;
+    white-space: nowrap;
 }
 
 p{
@@ -76,11 +100,88 @@ p{
     color: white;
 }
 
-.row{
-    display: flex;
-    align-items: center; 
+.calculator h3{
+    margin: 0;
 }
 
+p{
+    color: hsl(186, 14%, 43%);
+    margin: 0;
+}
+
+button{
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 0.2rem;
+    width: 100%;
+    font-size: 1rem;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    border-style: none;
+    text-align: center;
+}
+
+button:hover{
+    background-color:hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+
+#reset{
+    background-color: hsl(184, 14%, 56%);
+    color: hsl(183, 100%, 15%);
+    margin-top: 25%;
+}
+
+#reset:hover{
+    background-color:hsl(185, 41%, 84%);
+}
+
+#bill, #people{
+    color:hsl(183, 100%, 15%);
+    border-radius: 5px
+}
+
+#bill:focus, #custom:focus{
+    border: 2px solid hsl(185, 41%, 84%);
+    box-shadow: 6px hsl(185, 41%, 84%);
+    outline-style: none;
+}
+
+#bill{
+    background-image: url(../images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 5%;
+    height: 2rem;
+}
+
+#people{
+    background-image: url(../images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 5%;
+    height: 2rem;
+}
+
+#people:focus{
+    border: 1px solid red;
+    box-shadow: 3px red;
+    outline-style: none;
+}
+
+#custom{
+    width: 100%;
+    height: auto;
+    color: hsl(183, 100%, 15%);
+    border-radius: 0.2rem;
+}
+
+
+.grid-row{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+    margin: 0.5rem;
+}
 
 .attribution { font-size: 11px; text-align: center; position: fixed; bottom: 0}
 .attribution a { color: hsl(228, 45%, 44%); }

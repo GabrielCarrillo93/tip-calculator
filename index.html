@@ -16,17 +16,16 @@
     <section class="col-6 billPeople">
       <h1>Bill</h1>
       <div class="row">
-        <img src="images/icon-dollar.svg" alt="dollar sign">
         <input type="number" name="bill" id="bill" placeholder="0">
       </div>
       <div>
         <h2>Select Tip %</h2>
-        <div class="row">
+        <div class="grid-row">
           <button>5%</button>
           <button>10%</button>
           <button>15%</button>
         </div>
-        <div class="row">
+        <div class="grid-row">
           <button>25%</button>
           <button>50%</button>
           <input type="number" name="custom" id="custom" placeholder="Custom">
@@ -36,7 +35,6 @@
         <h2>Number of People</h2>
         <div>
           <div class="row">
-            <img src="images/icon-person.svg" alt="icon person">
             <input type="number" name="people" id="people" placeholder="0">
           </div>
         </div>
@@ -61,7 +59,7 @@
           <input type="text" name="total" id="total" placeholder="$0.00" readonly>
         </div>
       </div>
-      <button>Reset</button>
+      <button id="reset">RESET</button>
     </section>
   </main>
   
