@@ -1,6 +1,86 @@
 html{
     font-size: 24px;
+    font-family: 'Space Mono', monospace;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+*{
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    
+}
+
+header{
+    text-align: center;
+}
+
+body{
+    background-color: hsl(185, 41%, 84%);
+    display: grid;
+    align-items: center;
+    place-items: center;
+}
+
+main{
+    background-color: white;
+    display: flex;
+    border-radius: 0.5rem;
+}
+
+.billPeople, .calculator{
+    border-radius: 0.5rem;
+}
+
+input{
+    font-size: 1.2rem;
+    font-family: 'Space Mono', monospace;
+    text-align: end;
+    background-color: inherit;
+    border-style: none;
+
+}
+
+#total, #tipAmount, #custom{
+    width: 100%;
+    font-size: 1rem;
+}
+
+
+
+h1, h2, h3{
+    font-size: 0.7rem;
+}
+
+p{
+    font-size: 0.5rem;
+}
+
+.calculator{
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+}
+
+.row{
+    display: flex;
+    align-items: center; 
+}
+
+
+.attribution { font-size: 11px; text-align: center; position: fixed; bottom: 0}
 .attribution a { color: hsl(228, 45%, 44%); }
