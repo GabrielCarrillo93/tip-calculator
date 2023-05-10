@@ -107,6 +107,7 @@ p{
 p{
     color: hsl(186, 14%, 43%);
     margin: 0;
+    white-space: nowrap;
 }
 
 button{

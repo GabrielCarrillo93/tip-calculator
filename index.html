@@ -13,60 +13,62 @@
 <body>
   <header class="col-12"><img src="images/logo.svg" alt=""></header>
   <main class="col-7">
-    <section class="col-6 billPeople">
-      <h1>Bill</h1>
-      <div class="row">
-        <input type="number" name="bill" id="bill" placeholder="0">
-      </div>
-      <div>
-        <h2>Select Tip %</h2>
-        <div class="grid-row">
-          <button>5%</button>
-          <button>10%</button>
-          <button>15%</button>
+    <form action="">
+      <section class="col-6 billPeople">
+        <h1>Bill</h1>
+        <div class="row">
+          <input type="number" name="bill" id="bill" placeholder="0" min="0" autofocus>
         </div>
-        <div class="grid-row">
-          <button>25%</button>
-          <button>50%</button>
-          <input type="number" name="custom" id="custom" placeholder="Custom">
-        </div>
-      </div>
-      <div>
-        <h2>Number of People</h2>
         <div>
-          <div class="row">
-            <input type="number" name="people" id="people" placeholder="0">
+          <h2>Select Tip %</h2>
+          <div class="grid-row">
+            <button id="fivper" type="button">5%</button>
+            <button id="tenper">10%</button>
+            <button id="fifper">15%</button>
+          </div>
+          <div class="grid-row">
+            <button id="tweper">25%</button>
+            <button id="halper">50%</button>
+            <input type="number" name="custom" id="custom" placeholder="Custom">
           </div>
         </div>
-      </div>
-    </section>
-    <section class="col-6 calculator">
-      <div class="row">
-        <div class="col-3">
-          <h3>Tip Amount</h3>
-          <p>/ person</p>
+        <div>
+          <h2>Number of People</h2>
+          <div>
+            <div class="row">
+              <input type="number" name="people" id="people" placeholder="0">
+            </div>
+          </div>
         </div>
-        <div class="col-9">
-          <input type="text" name="tipAmount" id="tipAmount" placeholder="$0.00" readonly>
+      </section>
+      <section class="col-6 calculator">
+        <div class="row">
+          <div class="col-3">
+            <h3>Tip Amount</h3>
+            <p>/ person</p>
+          </div>
+          <div class="col-9">
+            <input type="text" name="tipAmount" id="tipAmount" placeholder="$0.00" readonly>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-3">
-          <h3>Total</h3>
-          <p>/ person</p>
+        <div class="row">
+          <div class="col-3">
+            <h3>Total</h3>
+            <p>/ person</p>
+          </div>
+          <div class="col-9">
+            <input type="text" name="total" id="total" placeholder="$0.00" readonly>
+          </div>
         </div>
-        <div class="col-9">
-          <input type="text" name="total" id="total" placeholder="$0.00" readonly>
-        </div>
-      </div>
-      <button id="reset">RESET</button>
-    </section>
+        <button type="reset" id="reset">RESET</button>
+      </section>
+    </form>
   </main>
   
+  <script src="js/logica.js"></script>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/GabrielCarrillo93">Gabriel Ivan Carrillo</a>.
   </footer>
-  <script src="js/logica.js"></script>
 </body>
 </html>
