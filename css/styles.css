@@ -200,6 +200,7 @@ img{
     text-align: center; 
     position: fixed; 
     bottom: 0;
+    background-color: hsl(185, 41%, 73%);
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
