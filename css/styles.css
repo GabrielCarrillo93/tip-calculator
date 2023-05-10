@@ -191,5 +191,18 @@ button:hover{
 
 }
 
-.attribution { font-size: 11px; text-align: center; position: fixed; bottom: 0}
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: fixed; 
+    bottom: 0;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"]{
+        width: 100%;
+    }
+}
