@@ -28,7 +28,7 @@ function perPerson(){
 }
 
 function getCustom(){
-    custom = parseInt(document.getElementById("custom").value);
+    custom = parseFloat(document.getElementById("custom").value);
     Percent.custom = custom / 100;
 }
 
