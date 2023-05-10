@@ -184,5 +184,12 @@ button:hover{
     margin: 0.5rem;
 }
 
+#warning{
+    color: red;
+    text-align: end;
+    margin-bottom: 0;
+
+}
+
 .attribution { font-size: 11px; text-align: center; position: fixed; bottom: 0}
 .attribution a { color: hsl(228, 45%, 44%); }
